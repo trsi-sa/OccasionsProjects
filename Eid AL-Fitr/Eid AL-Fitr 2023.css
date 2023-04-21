@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap');
+* {
+    margin: 0; padding: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif; }
+
+body {
+    background: #000;
+    height: 745px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    
+.text {
+    color: #FFF;
+    background: #000;
+    font-size: 100px;
+    text-transform: uppercase; }
+
+.text::before {
+    content: "عاد عيدكم يالمبرمجين";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px); }
+
+.neon-wrapper {
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden; }
+
+.gradient {
+    background: linear-gradient(130deg, #1579c7 4%, #6E82FE 97%);
+    position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        mix-blend-mode: multiply; }
+        
+.radial {
+    background: radial-gradient(circle, #FFF, #000 35%) center / 25% 25%;
+    position: absolute;
+    top: -100%; left: -100%;
+    right: 0; bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: radial-area 5s linear infinite; }
+
+@keyframes radial-area {
+    to {
+        transform: translate(50%, 50%); } }
